@@ -7,7 +7,7 @@ Poniżej znajduje się krótki opis każdego z projektów.
 ---
 
 ### 1. Inteligentna Lista Zadań (Python + Prolog)
-📂 **Katalog:** `ToDoList_prolog`
+📂 **Katalog:** `ToDoList-prolog`
 
 Aplikacja webowa typu "ToDo List", która wyróżnia się zastosowaniem logiki rozmytej. Dzięki połączeniu **Pythona (Flask)** z **Prologiem**, system potrafi analizować sens wprowadzanych zadań.
 
@@ -21,7 +21,7 @@ Aplikacja webowa typu "ToDo List", która wyróżnia się zastosowaniem logiki r
 ---
 
 ### 2. Bitwa Morska (Python CLI)
-📂 **Katalog:** `battleship` (lub nazwa twojego folderu)
+📂 **Katalog:** `statki-gra` 
 
 Klasyczna gra w statki przeniesiona do terminala. Jest to projekt typu CLI (Command Line Interface), który kładzie nacisk na interaktywność i obsługę logiki gry turowej dla dwóch graczy.
 
@@ -35,7 +35,7 @@ Klasyczna gra w statki przeniesiona do terminala. Jest to projekt typu CLI (Comm
 ---
 
 ### 3. Pogodynka (Bash & PowerShell)
-📂 **Katalog:** `weather_script` (lub nazwa twojego folderu)
+📂 **Katalog:** `pogodynka-terminal`
 
 Zestaw skryptów automatyzujących sprawdzanie pogody, napisanych w dwóch najpopularniejszych językach powłoki systemowej. Narzędzie automatycznie lokalizuje najbliższą stację pomiarową i pobiera z niej dane.
 
@@ -60,7 +60,7 @@ Below is a brief description of each project.
 ---
 
 ### 1. Intelligent To-Do List (Python + Prolog)
-📂 **Directory:** `ToDoList_prolog`
+📂 **Directory:** `ToDoList-prolog`
 
 A hybrid "To-Do List" web application that stands out by using fuzzy logic. By combining **Python (Flask)** with **Prolog**, the system is capable of analyzing the meaning of the tasks entered.
 
@@ -74,7 +74,7 @@ A hybrid "To-Do List" web application that stands out by using fuzzy logic. By c
 ---
 
 ### 2. Naval Battle (Python CLI)
-📂 **Directory:** `battleship` (or your folder name)
+📂 **Directory:** `statki-gra` 
 
 The classic Battleship game ported to the terminal. This CLI (Command Line Interface) project emphasizes interactivity and turn-based game logic for two players.
 
@@ -88,7 +88,7 @@ The classic Battleship game ported to the terminal. This CLI (Command Line Inter
 ---
 
 ### 3. Weather App (Bash & PowerShell)
-📂 **Directory:** `weather_script` (or your folder name)
+📂 **Directory:** `pogodynka-terminal` 
 
 A set of automation scripts for checking the weather, written in the two most popular shell languages. The tool automatically locates the nearest weather station and retrieves data from it.
 
@@ -103,3 +103,4 @@ A set of automation scripts for checking the weather, written in the two most po
 
 ### 📬 Contact
 If you have any questions about the code or would like to collaborate, feel free to reach out!
+
