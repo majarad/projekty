@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+
+    <!-- Ikonka strony (favicon) -->
+    <link rel="icon" href="https://i.pinimg.com/736x/08/9b/07/089b0780a1ea432aae517d3db32538db.jpg" type="image/jpeg">
+
+    <!-- Łączenie z plikiem CSS, który zawira cały styl storny -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+      <h1>Lista zadań</h1>
+
+        <!-- Formularz do dodawania nowego zadania -->
+        <form method="dialog" class="task-form" id="task-form">
+            <!-- Wybór priorytetu zadania -->
+            <select name="priority">
+              <option value="wysoki">🔥 WYSOKI priorytet</option>
+              <option value="średni">⚖️ ŚREDNI priorytet</option>
+              <option value="niski" selected>💩 NISKI priorytet</option>
+            </select>
+
+            <!-- Pole do wpisania treści zadania -->
+            <input type="text" id="task-input" name="task" placeholder="Wpisz zadanie..." required autocomplete="off">
+
+            <!-- Przycisk dodający zadanie -->
+            <button type="submit">Dodaj zadanie</button>
+        </form>
+
+        <!-- Okienko z pytaniem o potwierdzenie, gdy zadanie jest podobne do istniejącego -->
+        <div id="confirmation-box" style="display:none; margin-top: 10px;">
+          <p id="confirmation-message" class="message"></p>
+          <button id="confirm-yes" class="confirm-btn yes">Tak ✅</button>
+          <button id="confirm-no" class="confirm-btn no">Nie ❌</button>
+        </div>
+
+        <!-- Lista zadań -->
+        <h2>Twoje zadania:</h2>
+        <ul class="task-list" id="task-list">
+          {% for task in tasks %}
+          <li class="task {{ task.priority }}">
+            <label>
+              <!-- Checkbox do zaznaczenia zadania jako wykonane -->
+              <input type="checkbox" class="task-checkbox">
+
+              <!-- Tekst zadania z klasą określającą priorytet -->
+              <span class="task-text {{ task.priority }}">{{ task.text }}</span>
+            </label>
+
+            <!-- Przycisk do usunięcia zadania -->
+            <button class="delete-btn" aria-label="Usuń zadanie">&times;</button>
+          </li>
+          {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Podłączenie pliku JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
