@@ -1,41 +1,105 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-       NIESAMOWICIE EMOCJONUJĄCA...             
-        GRA W STATKI DLA 2 OSÓB!
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# 🇵🇱: Portfolio Projektowe – Maja Radowska
 
-Pewnie pamiętasz swoje podstawówkowe lata,
-kiedy na świetlicy, czy na luźnej lekcji
-pykałeś sobie w statki z ziomkiem z ławki...
-Moja gra pozwoli Ci cofnąć się do tych
-pięknych wspomnień <3
+Cześć! 👋 W tym repozytorium znajdziesz zbiór moich projektów programistycznych. Każdy z nich znajduje się w osobnym katalogu i demonstruje inne obszary moich umiejętności – od tworzenia aplikacji webowych z elementami sztucznej inteligencji, przez gry konsolowe, aż po automatyzację systemową.
 
-WAŻNE!	Przed uruchomieniem programu, upewnij się,
-	że masz zainstalowaną najnowszą
-	wersję Pythona i odpowiednie 
-	zewnętrzne biblioteki:
-		
-		- pandas
-		- keyboard
-		- colorama
+Poniżej znajduje się krótki opis każdego z projektów.
 
-	Aby je zainstalować, wpisz poniższą
-	komendę w cmd lub PoweShell na Windowsie:
-	
-	------> pip install pandas, keyboard, colorama 
+---
 
-Kiedy to zrobisz, to jesteś już gotowy do niezapomnianej
-przygody!
+### 1. Inteligentna Lista Zadań (Python + Prolog)
+📂 **Katalog:** `ToDoList_prolog`
 
-Wszystkie instrukcje do gry podawane są podczas rozgrywki ;)
+Aplikacja webowa typu "ToDo List", która wyróżnia się zastosowaniem logiki rozmytej. Dzięki połączeniu **Pythona (Flask)** z **Prologiem**, system potrafi analizować sens wprowadzanych zadań.
 
-Wystarczy tylko, że otworzysz program za pomocą Python i...
+**Kluczowe funkcjonalności:**
+* **Wykrywanie duplikatów:** Aplikacja ostrzega, jeśli spróbujesz dodać zadanie semantycznie podobne do istniejącego (np. "Kupić mleko" i "Kup mleko").
+* **Analiza języka naturalnego:** Normalizacja tekstu, obsługa polskich znaków i usuwanie tzw. "stopwords" przy użyciu reguł w Prologu.
+* **Interfejs:** Przejrzysty frontend oraz obsługa priorytetów zadań.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-              TO TYLE!!!!!
-   CIESZ SIĘ ROZGRYWKĄ ZE ZNAJOMYMI ;3                 	        	       
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+**Technologie:** Python, Flask, SWI-Prolog (biblioteka `pyswip`), HTML/CSS.
 
+---
+
+### 2. Bitwa Morska (Python CLI)
+📂 **Katalog:** `battleship` (lub nazwa twojego folderu)
+
+Klasyczna gra w statki przeniesiona do terminala. Jest to projekt typu CLI (Command Line Interface), który kładzie nacisk na interaktywność i obsługę logiki gry turowej dla dwóch graczy.
+
+**Kluczowe funkcjonalności:**
+* **Sterowanie:** Możliwość poruszania się po planszy strzałkami i zatwierdzania wyborów klawiszem ENTER (biblioteka `keyboard`).
+* **Oprawa wizualna:** Kolorowa grafika ASCII w terminalu (biblioteka `colorama`).
+* **Mechanika:** Tryb "Hotseat" (zmiana graczy przy jednym komputerze) z ukrywaniem planszy między turami oraz walidacja rozstawiania statków (biblioteka `pandas`).
+
+**Technologie:** Python, Pandas, Colorama, Keyboard.
+
+---
+
+### 3. Pogodynka (Bash & PowerShell)
+📂 **Katalog:** `weather_script` (lub nazwa twojego folderu)
+
+Zestaw skryptów automatyzujących sprawdzanie pogody, napisanych w dwóch najpopularniejszych językach powłoki systemowej. Narzędzie automatycznie lokalizuje najbliższą stację pomiarową i pobiera z niej dane.
+
+**Kluczowe funkcjonalności:**
+* **Wieloplatformowość:** Dedykowane wersje dla Linuxa (`.sh`) i Windowsa (`.ps1`).
+* **Praca z API:** Pobieranie danych z OpenStreetMap (geolokalizacja miasta) oraz IMGW (dane pogodowe).
+* **Optymalizacja:** Obliczanie odległości metodą Haversine’a oraz cache'owanie współrzędnych stacji w celu przyspieszenia działania.
+
+**Technologie:** Bash, PowerShell, JSON, cURL.
+
+---
+
+### 📬 Kontakt
+Jeśli masz pytania dotyczące kodu lub chciałbyś nawiązać współpracę, zapraszam do kontaktu!
+
+# 🇬🇧: Project Portfolio – Maja Radowska
+
+Hi! 👋 Welcome to my repository of programming projects. Each project is located in a separate directory and demonstrates different areas of my skills – from web applications with AI elements, through console games, to system automation.
+
+Below is a brief description of each project.
+
+---
+
+### 1. Intelligent To-Do List (Python + Prolog)
+📂 **Directory:** `ToDoList_prolog`
+
+A hybrid "To-Do List" web application that stands out by using fuzzy logic. By combining **Python (Flask)** with **Prolog**, the system is capable of analyzing the meaning of the tasks entered.
+
+**Key Features:**
+* **Duplicate Detection:** The app warns you if you try to add a task that is semantically similar to an existing one (e.g., "Buy milk" vs. "Purchase milk").
+* **Natural Language Processing:** Text normalization, handling Polish diacritics, and removing stopwords using Prolog rules.
+* **Interface:** Clean frontend with task priority management (High/Medium/Low).
+
+**Tech Stack:** Python, Flask, SWI-Prolog (`pyswip`), HTML/CSS.
+
+---
+
+### 2. Naval Battle (Python CLI)
+📂 **Directory:** `battleship` (or your folder name)
+
+The classic Battleship game ported to the terminal. This CLI (Command Line Interface) project emphasizes interactivity and turn-based game logic for two players.
+
+**Key Features:**
+* **Controls:** Navigate the board using arrow keys and confirm selections with ENTER (using the `keyboard` library).
+* **Visuals:** Colorful ASCII graphics in the terminal (using the `colorama` library).
+* **Mechanics:** "Hotseat" mode (switching players on one computer) with screen hiding between turns, and ship placement validation using `pandas`.
+
+**Tech Stack:** Python, Pandas, Colorama, Keyboard.
+
+---
+
+### 3. Weather App (Bash & PowerShell)
+📂 **Directory:** `weather_script` (or your folder name)
+
+A set of automation scripts for checking the weather, written in the two most popular shell languages. The tool automatically locates the nearest weather station and retrieves data from it.
+
+**Key Features:**
+* **Cross-Platform:** Dedicated versions for Linux (`.sh`) and Windows (`.ps1`).
+* **API Integration:** Fetches data from OpenStreetMap (city geolocation) and IMGW (weather data).
+* **Optimization:** Calculates distance using the Haversine formula and caches station coordinates to improve performance.
+
+**Tech Stack:** Bash, PowerShell, JSON, cURL.
+
+---
+
+### 📬 Contact
+If you have any questions about the code or would like to collaborate, feel free to reach out!
