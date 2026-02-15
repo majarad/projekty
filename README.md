@@ -1,6 +1,6 @@
 # 🇵🇱: Portfolio Projektowe – Maja Radowska
 
-Cześć! 👋 W tym repozytorium znajdziesz zbiór moich projektów programistycznych. Każdy z nich znajduje się w osobnym katalogu i demonstruje inne obszary moich umiejętności – od tworzenia aplikacji webowych z elementami sztucznej inteligencji, przez gry konsolowe, aż po automatyzację systemową.
+Cześć! 👋 W tym repozytorium znajdziesz zbiór moich projektów programistycznych. Każdy z nich znajduje się w osobnym katalogu i demonstruje inne obszary moich umiejętności – od tworzenia aplikacji webowych z elementami sztucznej inteligencji, przez gry konsolowe, aż po programowanie systemowe.
 
 Poniżej znajduje się krótki opis każdego z projektów.
 
@@ -45,6 +45,21 @@ Zestaw skryptów automatyzujących sprawdzanie pogody, napisanych w dwóch najpo
 * **Optymalizacja:** Obliczanie odległości metodą Haversine’a oraz cache'owanie współrzędnych stacji w celu przyspieszenia działania.
 
 **Technologie:** Bash, PowerShell, JSON, cURL.
+
+---
+
+### 4. Microshell (C + Linux API)
+
+📂 **Katalog:** `microshell`
+
+Autorski interpreter poleceń napisany w języku C, demonstrujący niskopoziomowe mechanizmy działania systemów operacyjnych. Projekt skupia się na zarządzaniu procesami i pamięcią, a także zawiera własne implementacje narzędzi analitycznych przydatnych w cyberbezpieczeństwie.
+
+**Kluczowe funkcjonalności:**
+* **Narzędzia Forensics:** Własna implementacja `myhexdump` (podgląd binarny plików) oraz `mygrep` (wyszukiwanie wzorców), pomocne przy wstępnej analizie malware.
+* **Zarządzanie Procesami:** Obsługa funkcji systemowych rodziny `fork` i `exec` do uruchamiania zewnętrznych programów.
+* **Bezpieczeństwo i Stabilność:** Obsługa sygnałów (np. przechwytywanie `SIGINT`), historia poleceń (`readline`) oraz weryfikacja pod kątem wycieków pamięci (`Valgrind`).
+
+**Technologie:** C, Linux API, Makefile, Valgrind.
 
 ---
 
@@ -101,5 +116,21 @@ A set of automation scripts for checking the weather, written in the two most po
 
 ---
 
+### 4. Microshell (C + Linux API)
+
+📂 **Directory:** `microshell`
+
+A custom command-line interpreter written in C, demonstrating low-level operating system mechanisms. The project focuses on process and memory management, featuring custom implementations of analysis tools useful in cybersecurity.
+
+**Key Features:**
+* **Forensics Tools:** Custom implementation of `myhexdump` (binary file analysis) and `mygrep` (pattern matching), useful for initial malware analysis.
+* **Process Management:** Utilizing `fork` and `exec` family system calls to execute external programs.
+* **Safety & Stability:** Signal handling (e.g., trapping `SIGINT`), command history (`readline`), and memory leak verification (`Valgrind`).
+
+**Tech Stack:** C, Linux API, Makefile, Valgrind.
+
+---
+
 ### 📬 Contact
+
 If you have any questions about the code or would like to collaborate, feel free to reach out!
