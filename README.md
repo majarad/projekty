@@ -68,7 +68,7 @@ Jeśli masz pytania dotyczące kodu lub chciałbyś nawiązać współpracę, za
 
 # 🇬🇧: Project Portfolio – Maja Radowska
 
-Hi! 👋 Welcome to my repository of programming projects. Each project is located in a separate directory and demonstrates different areas of my skills – from web applications with AI elements, through console games, to system automation.
+Hi! 👋 Welcome to my repository of programming projects. Each project is located in a separate directory and demonstrates different areas of my skills – from web applications with AI elements, through console games, to systems programming.
 
 Below is a brief description of each project.
 
@@ -134,3 +134,4 @@ A custom command-line interpreter written in C, demonstrating low-level operatin
 ### 📬 Contact
 
 If you have any questions about the code or would like to collaborate, feel free to reach out!
+
